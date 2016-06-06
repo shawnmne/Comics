@@ -1,46 +1,8 @@
 Rails.application.routes.draw do
-  get 'users/new'
 
-  get 'users/create'
-
-  get 'users/update'
-
-  get 'users/edit'
-
-  get 'users/destroy'
-
-  get 'users/show'
-
-  get 'users/index'
-
-  get 'comics/new'
-
-  get 'comics/create'
-
-  get 'comics/update'
-
-  get 'comics/edit'
-
-  get 'comics/destroy'
-
-  get 'comics/show'
-
-  get 'comics/index'
-
-  get 'boxes/new'
-
-  get 'boxes/create'
-
-  get 'boxes/update'
-
-  get 'boxes/edit'
-
-  get 'boxes/destroy'
-
-  get 'boxes/show'
-
-  get 'boxes/index'
-
+  resources :users
+  resources :boxes
+  resources :comics
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
